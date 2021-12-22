@@ -1,0 +1,261 @@
+/**
+ * Main CSS Styling
+ */
+/* main dashboard wrapper */
+::selection {
+    background: #f0572c !important; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #f0572c !important; /* Gecko Browsers */
+}
+select option:checked {
+    background: #f0572c !important;
+    color: #fff;
+}
+#dashboard_content{
+    padding:0 10px;
+    min-height:500px;
+    display: block;
+    margin-top: -24px;
+}
+#dashboard_left{
+    padding:20px 0;
+}
+.separator{
+    background-color: rgba(47, 47, 47, 0.35) !important;
+    margin: 10px 0!important;
+}
+
+#dashboard_right{
+    min-height: 550px;
+    padding: 8px 0;
+    padding-left: 3%;
+    border-left: 1px solid #eaeaea;
+    background: #f9f9f9;
+}
+
+#dashboard_content a, #dashboard_content h2{
+  font-family: 'Quicksand', 'Roboto' ,sans-serif;
+}
+
+#dashboard_content h2{
+      width: 97%;padding: 12px 0;
+
+}
+#dashboard_content input[type="text"],#dashboard_content input[type="password"],#dashboard_content input[type="textarea"]{
+    min-width: 30%;
+    height:28px;
+    margin-bottom: 5px;
+    padding: 0 8px;
+    border: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #333;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px rgba(158, 158, 158, 0.34) inset;
+    background: white;
+}
+#dashboard_content label{
+    display: inline-flex;
+    min-width: 25%;
+    font-weight: bold;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#dashboard_content textarea{
+  vertical-align: middle;
+}
+
+.rp_btn,button{
+    background: rgb(252, 140, 99);
+    color: white !important;
+    text-transform: uppercase;
+    border: none;
+    font-family: monospace;
+    font-size: 15px !important;
+}
+.rp_btn:hover{
+  background: #F05A2B;
+  border-color: #F05A2B;
+}
+
+#dashboard_content #dashboard_left ul li{
+  position: relative;
+  font-weight: 400;
+  margin: 0;
+    margin-bottom:10px;
+  padding: 0;
+  color: #303030;
+  list-style: none;
+}
+#dashboard_content #dashboard_right ul li{
+  position: relative;
+  font-weight: 600;
+  padding-right: 22px;
+  color: #303030;
+  list-style: none;
+  display: inline-flex;
+}
+#dashboard_content #dashboard_left ul li a{
+    padding: 8px 0;
+    padding-left: 25px;
+    display: flex;
+    height: 20px;
+    line-height: 23px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: color .7s;
+    color: rgb(252, 133, 89);
+}
+#dashboard_content #dashboard_left ul li:hover a{
+    color: rgba(0, 0, 0, 0.68);
+}
+
+
+#dashboard_content #dashboard_left ul li.active a{
+     color: #fff;    font-weight: bold;
+     background: rgba(0, 0, 0, 0.59);
+ }
+#dashboard_content #dashboard_left ul li.active a:hover{
+    color: #fff;
+}
+#dashboard_content #dashboard_right ul li a{
+    display: flex;
+    font-size: 18px;
+    padding: 12px 0;
+    -webkit-transition: color .7s;
+    transition: color .7s;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(47, 47, 47, 0.54);
+    text-shadow: 0px 1px 0px white;
+    font-weight: bold;
+}
+#dashboard_content #dashboard_right ul li.active a{
+    color: rgba(255, 69, 0, 0);
+    background: rgba(255, 69, 0, 0.6);
+    padding: 0px 10px;
+    height: 28px;
+    font-weight: bold;
+}
+
+
+#dashboard_left ul li a .fa{
+    padding-right: 15px;
+    width: 20px
+}
+.rp_right{
+  float: right;
+}
+
+.subscriptions_table{
+  border: 1px solid #e6e6e6;
+  margin-bottom: 15px;
+}
+.subscriptions_table tr td, .subscriptions_table thead tr th{
+  padding:5px 10px;
+  border-bottom: 1px solid #e6e6e6;
+  padding-right:45px;
+  text-align: left;
+}
+
+
+
+/* Single User Template CSS */
+#single-user-datatable{
+    margin: 20px 0;
+    border-left: #dcdcdc 1px solid;font-size: 15px;
+}
+#single-user-datatable tr:nth-child(even){
+    background: #fff;
+    border-bottom: rgba(211, 211, 211, 0.21) 1px solid;
+ }
+#single-user-datatable tr:nth-child(odd){
+    background: rgba(255, 255, 255, 0.74) !important;
+    border-bottom: rgba(211, 211, 211, 0.39) 1px solid;
+}
+#single-user-datatable thead tr{
+    border-bottom: rgb(240, 90, 43) 2px solid;
+    background:#fff !important;;
+    color: rgb(240, 90, 43);
+}
+#single-user-datatable thead tr th{
+    padding: 12px 10px;
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;font-size: 15px;
+}
+#single-user-datatable tbody tr td,#single-user-datatable tfoot tr th{
+    padding: 8px 10px;
+    text-align: left;font-size: 15px;
+}
+#single-user-datatable thead{
+    background: #fff !important;
+}
+#single-user-datatable thead tr:hover{
+     background:#fff !important;
+ }
+#single-user-datatable tr td:nth-child(1) a{
+    font-size: 18px !important;
+    color: #707070 !important;
+}
+#single-user-datatable tr:hover{
+    background:rgba(202, 233, 30, 0.05) !important;
+}
+
+.rp_pagination ul.page-numbers{
+    text-align:center;
+}
+.rp_pagination ul.page-numbers li{
+    text-align: center !important;
+}
+.rp_pagination ul.page-numbers li a{
+    font-size: 24px !important;
+    color: rgb(240, 90, 43) !important;
+    font-weight: 600 !important;
+    font-family: 'Quicksand', arial !important;
+    width: 35px !Important;
+    display: block !important;
+    -webkit-transition:all .5s;
+    transition:all .5s;
+    text-align:center;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    background:#fff;
+    padding: 6px 2px !important;
+    text-decoration: none !important;
+}
+.rp_pagination ul.page-numbers li a:hover{
+    background:rgb(240, 90, 43);
+    color:white !important;
+}
+.rp_pagination ul.page-numbers .current{
+    font-size: 24px !important;
+    background: white;
+    padding: 6px 4px;
+    width: 35px !important;
+    display: block;
+    border-radius: 4px;
+}
+
+.rp_link{
+    color:#F05A2B;    font-size: 20px;
+    vertical-align: sub;
+
+}
+.rp_heading{
+    margin: 20px 0;
+    margin-bottom: 10px;    color: rgba(47, 47, 47, 0.54);
+}
+.rp_message{
+    color: dodgerblue;
+    width:100% !important;
+    font-size:15px;
+    font-weight: normal;
+    transition:all .5s;
+    -webkit-transition:all .5s;
+}
